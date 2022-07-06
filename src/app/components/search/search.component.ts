@@ -9,8 +9,8 @@ export class SearchComponent implements OnInit {
   content: any = [];
   searchString: string = '';
   showData: boolean = false;
-  result: any;
-  cardId: any;
+  result: any = [];
+  cardId: any[] = [];
   constructor(private service: SharedService) {}
 
   ngOnInit(): void {
@@ -26,18 +26,18 @@ export class SearchComponent implements OnInit {
 
   handleSearch(e: any) {
     this.searchString.concat(e.key);
+    this.result = [];
+    console.warn('before-loop', this.result);
     for (let content of this.content) {
       console.log('serach', this.searchString);
       // console.log('content', content.Name);
-      if (this.searchString == content.Name) {
+      if (content.Name.includes(this.searchString) && this.searchString != '') {
         console.warn(
           'true search==' + this.searchString + 'content' + content.Name
         );
-        this.result = content;
-        break;
-      } else {
-        console.log('flase' + this.searchString + 'content' + content.Name);
-        this.result = false;
+        this.result.push(content);
+        console.log('push result---', this.result);
+        console.warn(this.searchString);
       }
     }
   }

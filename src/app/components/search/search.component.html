@@ -8,10 +8,17 @@
     (keyup)="handleSearch($event)"
   />
 </div>
-<div class="" *ngIf="result">
+<!-- <div class="" *ngIf="result">
   <div class="result">
     <a class="nav-link active" routerLink="card/{{ result.id }}">{{
       result.Name
     }}</a>
+  </div>
+</div> -->
+
+<div class="result">
+  <div *ngFor="let r of result">
+    <!-- <p>{{ r.Name }}</p> -->
+    <a class="nav-link active" routerLink="card/{{ r.id }}">{{ r.Name }}</a>
   </div>
 </div>
