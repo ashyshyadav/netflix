@@ -1,0 +1,6 @@
+<br /><br /><br />
+<section class="cards">
+  <div class="" *ngFor="let data of dataList">
+    <a routerLink="card/{{ data.id }}"><app-card [data]="data"></app-card></a>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<br /><br /><br />
+
+<section class="cards">
+  <div *ngFor="let m of movies">
+    <a routerLink="card/{{ m.id }}"><app-card [data]="m"></app-card></a>
+  </div>
+</section>

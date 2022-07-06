@@ -1,0 +1,33 @@
+.genre-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.genre-item {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  background-color: antiquewhite;
+  height: 20em;
+  padding: 3.5em;
+  margin: 2em;
+}
+a:hover {
+  transform: scale(1.1);
+}
+
+.comedy {
+  background: linear-gradient(#f5f79e, #ec9353);
+}
+.drama {
+  background: linear-gradient(#c59ef7, #e637c9);
+}
+.action {
+  background: linear-gradient(#9ef7f7, #53ec6a);
+}
+.romcom {
+  background: linear-gradient(rgb(230, 145, 145), hotpink);
+}

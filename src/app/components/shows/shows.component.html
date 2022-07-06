@@ -1,0 +1,8 @@
+<br /><br /><br />
+
+<section class="cards">
+  <div *ngFor="let s of shows">
+    <a routerLink="card/{{ s.id }}"><app-card [data]="s"></app-card></a>
+    <!-- <a><app-card [data]="s"></app-card></a> -->
+  </div>
+</section>

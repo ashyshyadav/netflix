@@ -1,0 +1,13 @@
+.navbar-brand {
+  color: #db0000 !important;
+  font-size: 200%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.result {
+  background-color: #db0000;
+}

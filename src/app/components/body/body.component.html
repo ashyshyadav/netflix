@@ -1,0 +1,21 @@
+<br>
+<br>
+<br>
+<br>
+
+<section  class="cards"> 
+<div class="" *ngFor="let data of movies" >
+    <a routerLink="card/{{data.id}}" ><app-card [data]="data" ></app-card></a>
+</div>
+
+
+</section>
+
+
+<!-- <section>
+    <div class="" *ngFor="let data of EmployeeList" >
+        {{data | json}}
+        <a routerLink="card/{{data.id}}" ><app-card [data]="data" ></app-card></a>
+    </div>
+</section> -->
+<p>content</p>

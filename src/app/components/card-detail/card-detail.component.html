@@ -1,0 +1,8 @@
+<br /><br /><br /><br />
+<div class="card-detail" *ngIf="details">
+  <h2>{{ details.Name | titlecase }}</h2>
+  <p>{{ details.Category | titlecase }} | {{ details.Genre | titlecase }}</p>
+  <p>{{ details.id }}</p>
+  <div class="img"><img src="{{ details.PhotoFile }}" alt="" /></div>
+</div>
+<!-- <button (click)="getDetail(id)" >Click me</button> -->

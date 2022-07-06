@@ -1,0 +1,11 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 1em;
+}
+
+.cards img {
+  height: 20em;
+  width: auto;
+  padding: 1em;
+}
